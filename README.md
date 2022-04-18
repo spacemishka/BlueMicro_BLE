@@ -1,5 +1,14 @@
 # BlueMicro Firmware  [![Current Version](https://img.shields.io/github/v/tag/jpconstantineau/BlueMicro_BLE)](https://github.com/jpconstantineau/BlueMicro_BLE/tags)  ![Build on Docker](https://github.com/jpconstantineau/BlueMicro_BLE/workflows/Build%20on%20Docker/badge.svg)
 
+## Currently Upgrading to support Adafruit nRF52 release 1.3.0!
+
+Work is currently under way to update BlueMicro_BLE to be able to use the latest release of the Adafruit Board Support Package.  This will enable the following
+
+* BLE profiles 
+* USB/BLE switching on the nrf52840
+
+
+
 **A Keyboard Firmware for nRF52832 and nRF52840 Boards**
 
 BlueMicro_BLE is a keyboard firmware that builds on top the Adafruit nRF52 board support package (BSP) for their line of Adafruit nRF52 Feather Boards.
@@ -10,10 +19,10 @@ By starting with the simple hid_keyboard.ino example provided with the Arduino b
 
 ## Build Status
 
-| Branch  | Github Actions - Docker (Adafruit BSP) | Github Actions - Docker (Community BSP) |Github Actions - Ubuntu (Community BSP) | Jenkins - Windows |
-| ------  | ------           | ------       | ------                  | ------            |
-| Master  | [![Build on Docker - Adafruit](https://github.com/jpconstantineau/BlueMicro_BLE/actions/workflows/build_docker_adafruit.yml/badge.svg)](https://github.com/jpconstantineau/BlueMicro_BLE/actions/workflows/build_docker_adafruit.yml) | [![Build on Docker - Community](https://github.com/jpconstantineau/BlueMicro_BLE/actions/workflows/build_docker_community.yml/badge.svg)](https://github.com/jpconstantineau/BlueMicro_BLE/actions/workflows/build_docker_community.yml) | [![Build on Ubuntu](https://github.com/jpconstantineau/BlueMicro_BLE/actions/workflows/build_ubuntu.yml/badge.svg)](https://github.com/jpconstantineau/BlueMicro_BLE/actions/workflows/build_ubuntu.yml) | ![Build Status](http://toronto.jpconstantineau.com:8585/buildStatus/icon?job=BlueMicro_BLE-master) |
-| Develop |![Build on Docker - Adafruit](https://github.com/jpconstantineau/BlueMicro_BLE/workflows/Build%20on%20Docker%20-%20Adafruit/badge.svg)|![Build on Docker - Community](https://github.com/jpconstantineau/BlueMicro_BLE/workflows/Build%20on%20Docker%20-%20Community/badge.svg) | ![Build on Ubuntu](https://github.com/jpconstantineau/BlueMicro_BLE/workflows/Build%20on%20Ubuntu/badge.svg?branch=develop) | ![Build Status](http://toronto.jpconstantineau.com:8585/buildStatus/icon?job=BlueMicro_BLE-develop) |
+| Branch  | Github Actions - Docker (Adafruit BSP) | Github Actions - Docker (Community BSP) |Github Actions - Ubuntu Builder | 
+| ------  | ------           | ------       | ------                  | 
+| Master  | [![Build on Docker - Adafruit](https://github.com/jpconstantineau/BlueMicro_BLE/actions/workflows/build_docker_adafruit.yml/badge.svg)](https://github.com/jpconstantineau/BlueMicro_BLE/actions/workflows/build_docker_adafruit.yml) | [![Build on Docker - Community](https://github.com/jpconstantineau/BlueMicro_BLE/actions/workflows/build_docker_community.yml/badge.svg)](https://github.com/jpconstantineau/BlueMicro_BLE/actions/workflows/build_docker_community.yml) | [![build firmware on Ubuntu](https://github.com/jpconstantineau/BlueMicro_BLE/actions/workflows/builder-ubuntu.yml/badge.svg)](https://github.com/jpconstantineau/BlueMicro_BLE/actions/workflows/builder-ubuntu.yml) |
+| Develop |![Build on Docker - Adafruit](https://github.com/jpconstantineau/BlueMicro_BLE/workflows/Build%20on%20Docker%20-%20Adafruit/badge.svg)|![Build on Docker - Community](https://github.com/jpconstantineau/BlueMicro_BLE/workflows/Build%20on%20Docker%20-%20Community/badge.svg) |  
 
 
 # Documentation
@@ -54,11 +63,11 @@ We're very happy to have your contributions in BlueMicro_BLE Firmware
 
 **Adding your keymaps**: First, make sure you've run a build for all keymaps applicable to your keyboard (./build.ps1 keyboardname). This will ensure that your keymap can support other hardware configurations.  Then, make a pull request to this repo. Thanks!
 
-**Looking for a feature**: Lots of features are already available; however, not everything is documented yet.  Join in on the [Discord server](https://discord.gg/8pZsrxP) and ask if it's already available, or if anyone is working on what you are looking for.  If you are willing to help adding or testing a new feature, join the team!
+**Looking for a feature**: Lots of features are already available; however, not everything is documented yet.  Join in on the [Discord server](https://discord.gg/ecnCR9P) and ask if it's already available, or if anyone is working on what you are looking for.  If you are willing to help adding or testing a new feature, join the team!
 
 **Filing an issue**: Submit issues to the [GitHub Issues](https://github.com/jpconstantineau/BlueMicro_BLE/issues) page.
 
- **Want to help**: take one of issues in the list [here](https://github.com/jpconstantineau/BlueMicro_BLE/issues) where you think you could help. Comment on it as you start work and join in on the [Discord server](https://discord.gg/8pZsrxP) for a live discussion.
+ **Want to help**: take one of issues in the list [here](https://github.com/jpconstantineau/BlueMicro_BLE/issues) where you think you could help. Comment on it as you start work and join in on the [Discord server](https://discord.gg/ecnCR9P) for a live discussion.
 
 
 # Credits
